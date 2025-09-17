@@ -1,0 +1,162 @@
+.testimonials {
+  padding: 5rem 0;
+  background-color: #1e1e1e;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-white);
+  margin-bottom: 1.5rem;
+  
+  @media (min-width: 1024px) {
+    font-size: 3rem;
+  }
+}
+
+.description {
+  font-size: 1.25rem;
+  color: var(--color-gray-400);
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.testimonialContainer {
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: var(--color-gray-900);
+  border: 1px solid var(--color-gray-700);
+  border-radius: 0.75rem;
+}
+
+.cardContent {
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  
+  @media (min-width: 1024px) {
+    padding: 3rem;
+  }
+}
+
+.quoteIcon {
+  display: flex;
+  justify-content: center;
+}
+
+.quote {
+  font-size: 1.25rem;
+  color: var(--color-gray-300);
+  line-height: 1.6;
+  font-style: italic;
+  
+  @media (min-width: 1024px) {
+    font-size: 1.5rem;
+  }
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.star {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #fbbf24;
+  fill: #fbbf24;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.avatar {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.authorInfo {
+  text-align: left;
+}
+
+.authorName {
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.authorRole {
+  color: var(--color-gray-400);
+}
+
+.authorCompany {
+  color: #34d399;
+  font-size: 0.875rem;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1.5rem;
+}
+
+.navButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  background-color: transparent;
+  color: var(--color-gray-300);
+  border: 1px solid var(--color-gray-600);
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background-color: var(--color-gray-800);
+  }
+}
+
+.dots {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: var(--color-gray-600);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+  &.active {
+    background-color: #34d399;
+  }
+}
