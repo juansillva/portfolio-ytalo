@@ -1,6 +1,6 @@
-import { useState } from 'react';
-import { Menu, X } from 'lucide-react';
-import styles from './Header.module.scss';
+import { Menu, X } from "lucide-react";
+import { useState } from "react";
+import styles from "./Header.module.scss";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,7 +8,7 @@ export default function Header() {
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
     setIsMenuOpen(false);
   };
@@ -17,48 +17,48 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.container}>
         <div className={styles.nav}>
-          <div className={styles.logo}>
-            Marculino
-          </div>
+          <div className={styles.logo}>Marculino</div>
 
           <nav className={styles.desktopNav}>
-            <button 
-              onClick={() => scrollToSection('inicio')}
+            <button
+              onClick={() => scrollToSection("inicio")}
               className={styles.navLink}
             >
               Início
             </button>
-            <button 
-              onClick={() => scrollToSection('sobre')}
+            <button
+              onClick={() => scrollToSection("sobre")}
               className={styles.navLink}
             >
               Sobre
             </button>
-            <button 
-              onClick={() => scrollToSection('servicos')}
+            <button
+              onClick={() => scrollToSection("servicos")}
               className={styles.navLink}
             >
               Serviços
             </button>
-            <button 
-              onClick={() => scrollToSection('projetos')}
+            <button
+              onClick={() => scrollToSection("projetos")}
               className={styles.navLink}
             >
               Projetos
             </button>
-            <button 
-              onClick={() => scrollToSection('contato')}
+            <button
+              onClick={() => scrollToSection("contato")}
               className={styles.navLink}
             >
               Contato
             </button>
-          </nav>
-              <button 
-              onClick={() => scrollToSection('contato')}
+            <a
+              href="/CURRÍCULO_YTALO_MARCULINO.pdf"
+              download
               className="btn btn-primary"
+              onClick={() => setIsMenuOpen(false)}
             >
               Download CV
-            </button>
+            </a>
+          </nav>
 
           {/* Mobile Menu Button */}
           <button
@@ -73,43 +73,45 @@ export default function Header() {
         {isMenuOpen && (
           <nav className={styles.mobileNav}>
             <div className={styles.mobileNavContent}>
-              <button 
-                onClick={() => scrollToSection('inicio')}
+              <button
+                onClick={() => scrollToSection("inicio")}
                 className={styles.mobileNavLink}
               >
                 Início
               </button>
-              <button 
-                onClick={() => scrollToSection('sobre')}
+              <button
+                onClick={() => scrollToSection("sobre")}
                 className={styles.mobileNavLink}
               >
                 Sobre
               </button>
-              <button 
-                onClick={() => scrollToSection('servicos')}
+              <button
+                onClick={() => scrollToSection("servicos")}
                 className={styles.mobileNavLink}
               >
                 Serviços
               </button>
-              <button 
-                onClick={() => scrollToSection('projetos')}
+              <button
+                onClick={() => scrollToSection("projetos")}
                 className={styles.mobileNavLink}
               >
                 Projetos
               </button>
-              <button 
-                onClick={() => scrollToSection('contato')}
+              <button
+                onClick={() => scrollToSection("contato")}
                 className={styles.mobileNavLink}
               >
                 Contato
               </button>
-              <button 
-                onClick={() => scrollToSection('contato')}
+              <a
+                href="/Ytalo_CV.pdf"
+                download
                 className="btn btn-primary"
-                style={{ width: 'fit-content' }}
+                style={{ width: "fit-content" }}
+                onClick={() => setIsMenuOpen(false)}
               >
                 Download CV
-              </button>
+              </a>
             </div>
           </nav>
         )}

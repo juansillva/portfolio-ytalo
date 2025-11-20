@@ -76,8 +76,7 @@ export default function Hero() {
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.7 }}
             >
-              <a href="#" className={styles.socialLink}><Linkedin size={24} /></a>
-              <a href="#" className={styles.socialLink}><Instagram size={24} /></a>
+              <a href="https://www.instagram.com/ytalomarculino/" className={styles.socialLink}><Instagram size={24} /></a>
             </motion.div>
           </motion.div>
 
