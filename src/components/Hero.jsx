@@ -65,7 +65,7 @@ export default function Hero() {
                 className={styles.outlineButton}
               >
                 <Play className={styles.buttonIcon} size={16} />
-                Assistir Reel
+               Fale Comigo!
               </button>
             </motion.div>
 
